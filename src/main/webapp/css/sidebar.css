@@ -1,0 +1,191 @@
+.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  text-align: center;
+}
+
+.topnav li {
+  display: inline-block;
+}
+
+.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav li a:hover:not(.active) {
+  background-color:#04AA6D;
+}
+
+.topnav.active {
+  background-color: #04AA6D;
+}
+
+/* ---- bottom bar --- */
+
+body {
+  margin: 0;
+  padding-bottom: 50px;
+  box-sizing: border-box;
+  
+  
+}
+
+.botnav {
+  position: fixed; 
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+  background-color: rgba(202, 202, 202, 0.943);
+  text-align: right;
+  
+  
+}
+
+.botnav a {
+  
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-bottom: 3px solid transparent;
+  display: inline-block;
+
+}
+
+.botnav a:hover {
+  border-bottom: 3px solid red;
+}
+
+.botnav a.active {
+  border-bottom: 3px solid red;
+}
+
+ /* The sidebar menu */
+ .sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 260px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #090101; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 20px 8px 20px 20px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+} 
+
+
+/* Style page content */
+.main {
+  margin-left: 270px; /* Same as the width of the sidebar */
+  margin-top: 30px;
+  padding: 0px 10px;
+}
+
+.profileicon{ /* profile image settings */
+  border-radius: 50%;
+  width:200px;
+}
+
+hr.new{ /*hr styles */
+border: 3px  rgb(22, 16, 28);
+border-style:solid;
+border-radius: 4px;
+
+}
+
+.profile-icon-text{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.personal_details_border{/* style personal details*/
+border:2px solid rgb(105, 105, 3);
+padding:25px;
+}
+
+.edit_butt{
+  padding:3px;
+  width: 5%;
+  font-size: medium;
+}
+.personal_details_border h3{
+  border:2px solid rgb(255, 255, 255);
+  background-color:  	#F8F8F8;
+  padding:6px 1px 6px 2px;
+  border-style: solid;
+  font-weight: 580;
+
+}
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.ul.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}

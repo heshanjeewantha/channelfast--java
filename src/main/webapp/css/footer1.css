@@ -1,0 +1,41 @@
+/* ---- bottom bar --- */
+
+body {
+    margin: 0;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+    
+    
+  }
+  
+  .topnav {
+    position: fixed; 
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgba(242, 242, 242, 0.5);
+    text-align: right;
+    
+    
+  }
+  
+  .topnav a {
+    
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    border-bottom: 3px solid transparent;
+    display: inline-block;
+  
+  }
+  
+  .topnav a:hover {
+    border-bottom: 3px solid #04AA6D;
+  }
+  
+  .topnav a.active {
+    border-bottom: 3px solid #04AA6D;
+  }
